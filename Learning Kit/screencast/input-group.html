@@ -139,10 +139,23 @@
               <h3 class="component-variation text-muted">Text</h3>
               <div class="code-live">
                 <h4 class="h5 text-muted mt-3">Before</h4>
+                <div class="input-group">
+                  <span class="input-group-text" id="before">#</span>
+                  <input type="text" class="form-control" placeholder="Hashtag" aria-label="Hashtag" aria-describedby="before">
+                </div>
                 
                 <h4 class="h5 text-muted mt-3">After</h4>
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="username" aria-label="username" aria-describedby="after">
+                  <span class="input-group-text" id="after">@example.com</span>
+                </div>
                 
                 <h4 class="h5 text-muted mt-3">Before and after</h4>
+                <div class="input-group">
+                  <span class="input-group-text">$</span>
+                  <input type="text" class="form-control" aria-label="mount (to nearest dollar)">
+                  <span class="input-group-text">.00</span>
+                </div>
                 
               </div>
             </div>
@@ -151,18 +164,39 @@
               <h3 class="component-variation text-muted">Other form controls</h3>
               <div class="code-live">
                 <h4 class="h5 text-muted mt-3">Textarea</h4>
+                <div class="input-group">
+                  <span class="input-group-text" id="textarea">Message</span>
+                  <textarea placeholder="write your message here" name="" id=""  class="form-control" aria-label="Message" aria-describedby="textarea"></textarea>
+                </div>
                 
                 <h4 class="h5 text-muted mt-3">Select</h4>
+                <div class="input-group">
+                  <span class="input-group-text" id="select">Select option</span>
+                  <select name="" id="" class="form-select" aria-label="Default select" aria-describedby="select">
+                    <option value="1">Option One</option>
+                    <option value="2">Option Two</option>
+                    <option value="3">Option Three</option>
+                    <option value="4">Option Four</option>
+                    <option value="5">Option Five</option>
+                  </select>
+                </div>
 
                 <h4 class="h5 text-muted mt-3">File</h4>
-
+                <div class="input-group">
+                  <input type="file" class="form-control" id="inputGroupFile">
+                  <label class="input-group-text" for="inputGroupFile">Upload</label>
+                </div>
               </div>
             </div>
 
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Label</h3>
               <div class="code-live">
-                
+                <label for="label" class="form-label">Input group label</label>
+                <div class="input-group">
+                  <span class="input-group-text" id="labelText">#</span>
+                  <input type="text" id="labelText" class="form-control" placeholder="Hashtag" aria-label="labelText" aria-describedby="before">
+                </div>
               </div>
             </div>
 
@@ -170,10 +204,22 @@
               <h3 class="component-variation text-muted">Sizing</h3>
               <div class="code-live">
                 <h4 class="h5 text-muted mt-3">Small</h4>
+                <div class="input-group input-group-sm">
+                  <span class="input-group-text" id="small">#</span>
+                  <input type="text" class="form-control" placeholder="Hashtag" aria-label="Hashtag" aria-describedby="before">
+                </div>
                 
                 <h4 class="h5 text-muted mt-3">Default</h4>
+                <div class="input-group">
+                  <span class="input-group-text" id="default">#</span>
+                  <input type="text" class="form-control" placeholder="Hashtag" aria-label="Hashtag" aria-describedby="before">
+                </div>
                 
                 <h4 class="h5 text-muted mt-3">Large</h4>
+                <div class="input-group input-group-lg">
+                  <span class="input-group-text" id="large">#</span>
+                  <input type="text" class="form-control" placeholder="Hashtag" aria-label="Hashtag" aria-describedby="before">
+                </div>
                 
               </div>
             </div>
@@ -182,8 +228,20 @@
               <h3 class="component-variation text-muted">Checks</h3>
               <div class="code-live">
                 <h4 class="h5 text-muted mt-3">Check</h4>
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <input type="checkbox" class="form-check-input" aria-label="Checkbox for text input">
+                  </span>
+                  <input type="text" class="form-control" placeholder="Text input with checkbox" aria-label="Text input with checkbox">
+                </div>
                 
                 <h4 class="h5 text-muted mt-3">Radio</h4>
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <input type="radio" class="form-check-input" aria-label="Radio button for text input">
+                  </span>
+                  <input type="text" class="form-control" placeholder="Text input with radio button" aria-label="Text input with radio button">
+                </div>
                 
               </div>
             </div>
@@ -191,7 +249,11 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Multiple inputs</h3>
               <div class="code-live">
-                
+                <div class="input-group">
+                  <span class="input-group-text">First and Last name</span>
+                  <input type="text" class="form-control" aria-label="First name">
+                  <input type="text" class="form-control" aria-label="Last name">
+                </div>
               </div>
             </div>
 
@@ -199,8 +261,20 @@
               <h3 class="component-variation text-muted">Multiple text</h3>
               <div class="code-live">
                 <h4 class="h5 text-muted mt-3">Before</h4>
+                <div class="input-group">
+                  <span class="input-group-text">1</span>
+                  <span class="input-group-text">2</span>
+                  <span class="input-group-text">3</span>
+                  <input type="text" class="form-control" aria-label="Multiple text">
+                </div>
                 
                 <h4 class="h5 text-muted mt-3">After</h4>
+                <div class="input-group">
+                  <input type="text" class="form-control" aria-label="Multiple text">
+                  <span class="input-group-text">1</span>
+                  <span class="input-group-text">2</span>
+                  <span class="input-group-text">3</span>
+                </div>
                 
               </div>
             </div>
@@ -209,8 +283,16 @@
               <h3 class="component-variation text-muted">Button</h3>
               <div class="code-live">
                 <h4 class="h5 text-muted mt-3">Before</h4>
+                <div class="input-group">
+                  <button class="btn btn-secondary">Search</button>
+                  <input type="text" class="form-control" placeholder="Search text here" aria-label="Text input with button">
+                </div>
                 
                 <h4 class="h5 text-muted mt-3">After</h4>
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search text here" aria-label="Text input with button">
+                  <button class="btn btn-secondary">Search</button>
+                </div>
                 
               </div>
             </div>
@@ -218,6 +300,15 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Dropdown</h3>
               <div class="code-live">
+                <div class="input-group">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Topic</button>
+                  <div class="dropdown-menu" aria-labelledby="dropdown">
+                    <a href="#" class="dropdown-item">First item</a>
+                    <a href="#" class="dropdown-item">Second item</a>
+                    <a href="#" class="dropdown-item">Third item</a>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Search text here" aria-label="Text input with dropdown">
+                </div>
                 
               </div>
             </div>
@@ -225,7 +316,16 @@
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Dropdown split button</h3>
               <div class="code-live">
-                
+                <div class="input-group">
+                  <button type="button" class="btn btn-secondary">Topic</button>
+                  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownSplit" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="visually-hidden">Toggle dropdown</span></button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownSplit">
+                    <a href="#" class="dropdown-item">First item</a>
+                    <a href="#" class="dropdown-item">Second item</a>
+                    <a href="#" class="dropdown-item">Third item</a>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Search text here" aria-label="Text input with dropdown">
+                </div>
               </div>
             </div>
 
