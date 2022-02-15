@@ -139,42 +139,164 @@
               <h3 class="component-variation text-muted">Form groups</h3>
               <p>Grouping of labels, controls, optional help text and form validation messages.</p>
               <div class="code-live">
-
+                <form action="">
+                  <div class="mb-3">
+                    <label for="formGroupText" class="form-label">Text input label</label>
+                    <input type="text" id="formGroupText" class="form-control" placeholder="Text input placeholder">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formGroupText2" class="form-label">Text input label</label>
+                    <input type="text" id="formGroupText2" class="form-control" placeholder="Text input placeholder" aria-describedby="formGroupText2Help" >
+                    <p id="formGroupText2Help" class="form-text">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus pariatur voluptatum nesciunt, distinctio officiis perferendis.
+                    </p>
+                    <p class="valid-feedback">valid feedback text</p>
+                    <p class="invalid-feedback">Invalid feedback text</p>
+                  </div>
+                </form>
               </div>
             </div>
 
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Form grid</h3>
               <div class="code-live">
-                
+                <form action="">
+                  <div class="row g-3">
+                    <div class="col-lg-7">
+                      <input type="text" class="form-control" placeholder="Text input placeholder" aria-label="text input label">
+                    </div>
+                    <div class="col-lg-3">
+                      <input type="text" class="form-control" placeholder="Text input placeholder" aria-label="text input label">
+                    </div>
+                    <div class="col-lg-2">
+                      <input type="text" class="form-control" placeholder="Text input placeholder" aria-label="text input label">
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
 
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Gutters</h3>
               <div class="code-live">
-                
+                <form action="">
+                  <div class="row gx-2 mb-4">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Text input placeholder" aria-label="text input label">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Text input placeholder" aria-label="text input label">
+                    </div>
+                  
+                  </div>
+                  <div class="row g-4">
+                    <div class="col-6">
+                      <input type="text" class="form-control" placeholder="Text input placeholder" aria-label="text input label">
+                    </div>
+                    <div class="col-6">
+                      <input type="text" class="form-control" placeholder="Text input placeholder" aria-label="text input label">
+                    </div>
+                    <div class="col-6">
+                      <input type="text" class="form-control" placeholder="Text input placeholder" aria-label="text input label">
+                    </div>
+                    <div class="col-6">
+                      <input type="text" class="form-control" placeholder="Text input placeholder" aria-label="text input label">
+                    </div>
+                  
+                  </div>
+                </form>
               </div>
             </div>
 
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Horizontal form</h3>
               <div class="code-live">
-
+                <form action="">
+                  <div class="row mb-3">
+                    <label for="horizontalEmail" class="col-md-2 col-form-label">Email</label>
+                    <div class="col-md-10">
+                      <input type="email" class="form-control" id="horizontalEmail">
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="horizontalPassword" class="col-md-2 col-form-label">Password</label>
+                    <div class="col-md-10">
+                      <input type="password" class="form-control" id="horizontalPassword">
+                    </div>
+                  </div>
+                  <fieldset class="row mb-3">
+                    <legend class="col-md-2 col-form-label pt-0">Level</legend>
+                    <div class="col-md-10">
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" name="horizontalRadio" id="horizontalRadio1"></input>
+                        <label for="horizontalRadio1" class="form-check-label">Beginner</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" name="horizontalRadio" id="horizontalRadio2"></input>
+                        <label for="horizontalRadio2" class="form-check-label">Intermediate</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" name="horizontalRadio" id="horizontalRadio3"></input>
+                        <label for="horizontalRadio3" class="form-check-label">Advanced</label>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <button type="submit" class="btn btn-primary">Register</button>
+                </form>
               </div>
             </div>
 
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Horizontal form label sizing</h3>
               <div class="code-live">
-
+                <form action="">
+                  <div class="row mb-3">
+                    <label for="colFormLabelSmall" class="col-md-2 col-form-label col-form-label-sm">small label</label>
+                    <div class="col-md-10">
+                      <input type="text" id="colFormLabelSmall" class="form-control form-control-sm" placeholder="Small form control">
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="colFormLabelDefault" class="col-md-2 col-form-label">Default label</label>
+                    <div class="col-md-10">
+                      <input type="text" id="colFormLabelDefault" class="form-control " placeholder="Default form control">
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="colFormLabelLarge" class="col-md-2 col-form-label col-form-label-lg">Large label</label>
+                    <div class="col-md-10">
+                      <input type="text" id="colFormLabelLarge" class="form-control form-control-lg" placeholder="large form control">
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
 
             <div class="code-example mb-5">
               <h3 class="component-variation text-muted">Inline form</h3>
               <div class="code-live">
-
+                <form action="" class="row row-cols-md-auto g-2 align-items-center">
+                  <div class="col-12">
+                    <label for="inlineInputGroup" class="visually-hidden">Username</label>
+                    <div class="input-group">
+                      <div class="input-group-text">@</div>
+                      <input type="text" class="form-control" id="inlineInputGroup" placeholder="Username">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <label for="inlineInputGroup" class="visually-hidden">Password</label>
+                    <input type="password" class="form-control" placeholder="Password" id="inlineInput">
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="inlineCheck">
+                      <label for="inlineCheck" class="form-check-label">Remember me</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Log in</button>
+                  </div>
+                </form>
               </div>
             </div>
 
